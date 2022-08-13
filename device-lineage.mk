@@ -41,3 +41,9 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
+
+# Scudo
+PRODUCT_USE_SCUDO := true
+
+# PixelParts
+#include packages/apps/PixelParts/device.mk
