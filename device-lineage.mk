@@ -18,6 +18,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES := \
     HbmSVManagerOverlay
 
+
+# Kernel
+TARGET_PREBUILT_KERNEL := device/google/raviole-kernel/Image.lz4
+
 # Build necessary packages for vendor
 
 # Codec2
