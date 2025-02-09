@@ -1,15 +1,12 @@
 #
-# Copyright (C) 2023 The Derpfest Project
-#
+# SPDX-FileCopyrightText: 2021-2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2021-2024 The Calyx Institute
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Derpfest stuff.
+# Inherit some common stuff
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-DERP_BUILDTYPE := Official
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 DEVICE_CODENAME := bluejay
@@ -22,7 +19,7 @@ $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
-PRODUCT_NAME := derp_$(DEVICE_CODENAME)
+PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
