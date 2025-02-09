@@ -10,8 +10,6 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 DERP_BUILDTYPE := Official
-TARGET_SUPPORTS_QUICK_TAP := true
-EXTRA_UDFPS_ICONS := true
 
 # Inherit device configuration
 DEVICE_CODENAME := bluejay
