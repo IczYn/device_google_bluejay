@@ -8,6 +8,11 @@
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# setup dalvik vm configs.
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+
+
 # Inherit device configuration
 DEVICE_CODENAME := bluejay
 DEVICE_PATH := device/google/bluejay
