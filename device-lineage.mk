@@ -19,8 +19,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # HBM
-PRODUCT_PACKAGES := \
-    HbmSVManagerOverlay
+#PRODUCT_PACKAGES := \
+ #   HbmSVManagerOverlay
 
 # IWLAN
 PRODUCT_PACKAGES += \
@@ -45,10 +45,10 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
-    
+
 # Camera
-$(call inherit-product-if-exists, vendor/google/camera/config.mk)
-    
+#$(call inherit-product-if-exists, vendor/google/camera/config.mk)
+
 # PixelParts
 include packages/apps/PixelParts/device.mk
 
