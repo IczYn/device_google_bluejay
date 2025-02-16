@@ -12,6 +12,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 
+WITH_GMS  :=  true
+WITH_PIXEL_OVERLAYS := true
 # UDFPS support
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
