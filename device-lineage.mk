@@ -49,4 +49,6 @@ PRODUCT_PACKAGES += \
 # Camera
 $(call inherit-product-if-exists, vendor/google/camera/config.mk)
     
+# PixelParts
+include packages/apps/PixelParts/device.mk
 
